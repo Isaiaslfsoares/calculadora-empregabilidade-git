@@ -11,6 +11,15 @@ function inserir(valor) {
     }
 }
 
+function limparTela() {
+    document.formulario.tela.value = '';
+}
+
+function deletar() {
+    const tela = document.formulario.tela;
+    tela.value = tela.value.slice(0, -1);
+}
+
 function isOperador(char) {
     return ['+', '-', '*', '/'].includes(char);
 }
